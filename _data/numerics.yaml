@@ -1712,6 +1712,15 @@ values:
             Since charybdis 3.4.0 for "Underlying IPv4 is %s".
 
     -
+        name: RPL_WHOISSSL
+        numeric: "337"
+        origin: IRC-Hispano
+        format: "<client> <nick> :<description>
+        conflict: true
+        comment: >
+            Part of the WHOIS response when a user is connected via SSL.
+
+    -
         name: RPL_CHANPASSOK
         numeric: "338"
         conflict: true
@@ -1761,6 +1770,16 @@ values:
             it is summoning that user
 
         obsolete: true
+
+    -
+        name: RPL_MSGONLYREG
+        numeric: "342"
+        origin: IRC-Hispano
+        format: "<client> <nick> :<description>"
+        conflict: true
+        comment: >
+            Part of the WHOIS response when a user only accepts private messages
+            from registered users.
 
     -
         name: RPL_WHOISKILL
@@ -2171,6 +2190,15 @@ values:
         name: RPL_ENDOFALIST
         numeric: "389"
         origin: Unreal
+
+    -
+        name: RPL_WHOISSUSPEND
+        numeric: "390"
+        origin: IRC-Hispano
+        format: "<client> <nick> :<description>"
+        comment: >
+            Part of the WHOIS response when a user is using a suspended
+            nickname.
 
     -
         name: RPL_TIME
